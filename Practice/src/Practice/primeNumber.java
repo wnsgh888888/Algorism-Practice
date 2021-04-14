@@ -4,20 +4,18 @@ public class primeNumber {
 	
 	public static boolean solution(int n) {
 		
-		int chk = 0;
+		int count = 0;
 		
-		for(int i=1; i<n; i++) {
+		for(int i=2; i<n; i++) {
 			if (n % i == 0) 
-				chk++;
+				count++;
 		}
 		
-		return chk == 1 ? true : false;
+		return count == 0 ? true : false;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(primeNumber.solution(10));
-		
-		
+		System.out.println(primeNumber.solution(3));
 	}
 }
